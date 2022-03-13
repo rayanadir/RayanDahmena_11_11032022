@@ -1,10 +1,10 @@
 import './Tag.css'
 
-const Tag = () => {
+const Tag = (tag) => {
     return(
         <div className="tag">
             <p className='tagName'>
-                tag
+                {tag.name}
             </p>
         </div>
     )

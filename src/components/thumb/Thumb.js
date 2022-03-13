@@ -1,10 +1,10 @@
 import '../thumb/Thumb.css'
 
-const Thumb = () =>{
+const Thumb = (data) =>{
     return (
         <div className="thumb">
-            <img src="./kasa_logo.jpg" alt="logo" className="thumbImg"/>
-            <p className="thumbTitle">Nom de la location</p>
+            <img src={data.cover} alt="logo" className="thumbImg"/>
+            <p className="thumbTitle"> {data.name} </p>
         </div>
     )
 }
