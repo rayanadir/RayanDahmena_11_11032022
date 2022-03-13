@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './components/tag/Tag'
+import Tag from './components/tag/Tag';
+import Thumb from './components/thumb/Thumb';
+import {Dropdown} from './components/dropdown/dropdown';
+import { data } from './data/logements';
+import { about } from './data/aboutData';
+import { About } from './components/about/about';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App = ()=> {
+    
+  return(
+      <div>
+        <Tag name={data[0].tags[0]}/>
+        <Thumb name={data[0].title} cover={data[0].cover} />
+        <Dropdown list={data[0].equipments}/>
+        <About name={about[1].name} content={about[1].content} />
+      </div>
+    )
+    
+  }
 
 export default App;
