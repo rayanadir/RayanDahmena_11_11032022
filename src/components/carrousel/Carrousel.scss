@@ -1,0 +1,36 @@
+.carrousel{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 1240px;
+    &__image{
+        width: 1240px;
+        height: 415px;
+        object-fit: cover;
+        border-radius: 25px;
+        display: block;
+    }
+    &__chevronLeft{
+        left: 30px;
+    }
+    &__chevronRight{
+        right: 30px;
+    }
+    &__index{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        color: white;
+        font-size: 18px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+    }
+}
+
+.chevron{
+    font-size: 48px;
+    position: absolute;
+    color: white;
+    cursor: pointer;
+}
