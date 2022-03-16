@@ -1,4 +1,5 @@
 import './Tag.scss'
+import PropTypes from 'prop-types';
 
 const Tag = (props) => {
     return(
@@ -8,6 +9,10 @@ const Tag = (props) => {
             </p>
         </div>
     )
+}
+
+Tag.propTypes={
+    name:PropTypes.string,
 }
 
 export default Tag
