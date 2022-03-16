@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import React, { useState } from 'react'
 import dropdownView from './ToggleDropdown'
+import PropTypes from 'prop-types';
 
 const Dropdown = (props) => {
     const [isOpen, toggle]=useState("closed")
@@ -29,6 +30,13 @@ const Dropdown = (props) => {
             </div>
         </div>
     )
+}
+
+Dropdown.propTypes={
+    type:PropTypes.string,
+    name:PropTypes.string,
+    content:PropTypes.string,
+    element:PropTypes.string,
 }
 
 export default Dropdown
