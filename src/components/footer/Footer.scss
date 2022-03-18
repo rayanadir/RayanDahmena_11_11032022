@@ -1,0 +1,30 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1440px;
+    height: 209px;
+    position: relative;
+    background-color: black;
+    &__logo{
+        width: 122px;
+        height: 39.44px;
+        align-self: center;
+    }
+    &__copyrights{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        color: white;
+        align-self: center;
+    }
+}
+
+@media (max-width:768px){
+    .footer{
+        &__copyrights{
+            font-size: 12px;
+        }
+    }
+}
