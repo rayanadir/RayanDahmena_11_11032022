@@ -22,3 +22,13 @@
     }
 }
 
+@media (max-width: 768px){
+    .thumb{
+        width: 340px;
+        height: 255px;
+        &__img{
+            width: 340px;
+            height: 255px;
+        }
+    }
+}
