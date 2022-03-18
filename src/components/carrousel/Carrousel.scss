@@ -2,54 +2,31 @@
     display: flex;
     align-items: center;
     position: relative;
+    margin: auto;
     &__image{
-        &__medium{
-            width:335px;
-            height: 255px;
-            border-radius: 10px;
-        }
-        &__large{
-            width: 1240px;
-            height: 415px;
-            object-fit: cover;
-            border-radius: 25px;
-            display: block;
-        }
+        width: 1240px;
+        height: 415px;
+        object-fit: cover;
+        border-radius: 25px;
+        display: block;
     }
     &__chevronLeft{
-        &__medium{
-            left: 15px;
-            font-size: 24px;
-        }
-        &__large{
-            left: 30px;
-            font-size: 48px;
-        }
+        left: 30px;
+        font-size: 48px;
     }
     &__chevronRight{
-        &__medium{
-            right: 15px;
-            font-size: 24px;
-        }
-        &__large{
-            right: 30px;
-            font-size: 48px;
-        }
+        right: 30px;
+        font-size: 48px;
     }
     &__index{
-        &__large{
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            color: white;
-            font-size: 18px;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 500;
-        }
-        &__medium{
-            display: none;
-        }
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        color: white;
+        font-size: 18px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
     }
 }
 
@@ -59,10 +36,63 @@
     cursor: pointer;
 }
 
-.medium{
-    width: 335px;
+
+@media (min-width:1440px){
+    .carrousel{
+        &__image{
+            width:1240px;
+        }
+    }
 }
 
-.large{
-    width: 1240px;
+@media (min-width:768px) and (max-width:1439px){
+    .carrousel{
+        &__image{
+            max-width:1240px;
+            min-width: 768px;
+            max-height: 415px;
+            min-height: 255px;
+        }
+    }
+}
+
+@media (max-width:767px){
+    .carrousel{
+        &__index{
+            display: none;
+        }
+        &__image{
+            border-radius: 10px;
+        }
+    }
+} 
+
+@media (min-width:320px) and (max-width:767px){
+    .carrousel{
+        max-width:727px;
+        min-width: 280px;
+        &__image{
+            max-width:727px;
+            min-width: 280px;
+            height: auto;
+            margin: 20px;
+        } 
+    }
+    .chevron{
+        font-size: 24px;
+    }
+}
+
+@media (max-width:319px){
+    .carrousel{
+        max-width:319px;
+        &__image{
+            max-width:319px;
+            height: auto;
+            margin: 20px;
+        }
+    }
+    .chevron{
+        font-size: 24px;
+    }
 }
