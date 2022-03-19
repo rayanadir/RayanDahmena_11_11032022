@@ -36,7 +36,7 @@ Dropdown.propTypes={
     type:PropTypes.string,
     name:PropTypes.string,
     content:PropTypes.string,
-    element:PropTypes.string,
+    element:PropTypes.array.isRequired,
 }
 
 export default Dropdown
