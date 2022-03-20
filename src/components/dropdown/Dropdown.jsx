@@ -16,7 +16,7 @@ const Dropdown = (props) => {
     }
 
     return (
-        <div>
+        <div className='dropdown_wrap'>
             <div className={`dropdown ${props.type}`} onClick={(e)=>toggleDropdown(e)}>
                 <p className="dropdown__name">{props.name}</p>
                 <FontAwesomeIcon icon={faChevronDown} className="dropdown__icon dropdown__open" id={'chevron_'+ props.name} />
@@ -36,7 +36,7 @@ Dropdown.propTypes={
     type:PropTypes.string,
     name:PropTypes.string,
     content:PropTypes.string,
-    element:PropTypes.array.isRequired,
+    element:PropTypes.array,
 }
 
 export default Dropdown
