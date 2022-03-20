@@ -7,19 +7,21 @@ import { data } from './data/logements';
 import { about } from './data/aboutData';
 import Footer from './components/footer/Footer';
 import Home from './views/Home/Home';
+import About from './views/About/About';
 
 
 const App = ()=> {
-    console.log(data);
+    //console.log(data);
   return(
       <div>
         
-        <Home />
         
+        <About />
         
         
         
         {/*
+        <Home />
         <Dropdown name={about[1].name} content={about[1].content} type="about" />
         <Tag name={data[0].tags[0]}/>
         <Dropdown content={data[0].equipments} name="Equipements" type="equipements_description"/>
