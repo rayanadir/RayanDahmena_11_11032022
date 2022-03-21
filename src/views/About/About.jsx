@@ -3,8 +3,8 @@ import React from 'react';
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import AboutDropdowns from '../../components/aboutDropdowns/AboutDropdowns';
-import Carrousel from '../../components/carrousel/Carrousel';
 import background from '../../assets/background_about.png'
+import Banner from '../../components/banner/Banner';
 
 
 const About = () => {
@@ -12,7 +12,7 @@ const About = () => {
     return (
         <div>
             <Header />
-            <Carrousel image={background} type="about" />
+            <Banner image={background} />
             <AboutDropdowns />
             <Footer />
         </div>
