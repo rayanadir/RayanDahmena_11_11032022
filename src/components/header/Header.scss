@@ -24,9 +24,9 @@
     }
 }
 
-@media (max-width:768px){
+@media (max-width:767px){
     .header{
-        margin:2rem;
+        margin:1rem;
         &__logo{
             width: 145px;
             height: 47px;
@@ -54,9 +54,12 @@
     }
 }
 
-@media (min-width:1440px){
+
+@media (min-width:768px){
     .header{
         margin: auto;
         margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 94%;
     }
 }
