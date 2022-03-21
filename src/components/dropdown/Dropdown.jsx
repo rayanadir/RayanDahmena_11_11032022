@@ -2,26 +2,36 @@ import '../dropdown/Dropdown.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import React, { useState } from 'react'
-import dropdownView from './ToggleDropdown'
 import PropTypes from 'prop-types';
 
 const Dropdown = (props) => {
-    const [isOpen, toggle]=useState("closed")
+    const [isOpen, toggle]=useState(false)
     
     const toggleDropdown = (e) => {
         e.preventDefault();
-        const value  = (isOpen)=>{return isOpen==="closed" ? "open" : "closed"}
-        toggle(value(isOpen));
+        toggle(!isOpen);
         dropdownView(props,isOpen)
+    }
+
+    const dropdownView = (props,isOpen) =>{
+        if(isOpen){
+            document.getElementById(props.name).classList.add('closed')
+            document.getElementById(props.name).classList.remove('open')
+            document.getElementById('chevron_'+props.name).classList.remove('dropdown__open')
+        }else{
+            document.getElementById(props.name).classList.add('open')
+            document.getElementById(props.name).classList.remove('closed')
+            document.getElementById('chevron_'+props.name).classList.add('dropdown__open')
+        }
     }
 
     return (
         <div className='dropdown_wrap'>
             <div className={`dropdown ${props.type}`} onClick={(e)=>toggleDropdown(e)}>
                 <p className="dropdown__name">{props.name}</p>
-                <FontAwesomeIcon icon={faChevronDown} className="dropdown__icon dropdown__open" id={'chevron_'+ props.name} />
+                <FontAwesomeIcon icon={faChevronDown} className="dropdown__icon" id={'chevron_'+ props.name} />
             </div>
-            <div id={props.name} className={`dropdown__list ${props.type} open`}>
+            <div id={props.name} className={`dropdown__list ${props.type} closed`}>
                 {
                     Array.isArray(props.content) ? props.content.map((element) => {
                         return <li className="dropdown__elementName" key={element}>{element}</li>
@@ -35,8 +45,7 @@ const Dropdown = (props) => {
 Dropdown.propTypes={
     type:PropTypes.string,
     name:PropTypes.string,
-    content:PropTypes.string,
-    element:PropTypes.array,
+    content:PropTypes.string || PropTypes.array,
 }
 
 export default Dropdown
