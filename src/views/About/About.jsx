@@ -12,7 +12,7 @@ const About = () => {
     return (
         <div>
             <Header />
-            <Banner image={background} />
+            <Banner image={background} type="about" />
             <AboutDropdowns />
             <Footer />
         </div>
