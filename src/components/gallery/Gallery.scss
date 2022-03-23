@@ -1,0 +1,28 @@
+/*.gallery{
+    background: #F7F7F7;
+    border-radius: 25px;
+    max-width: 1240px;
+    margin: auto;
+    height: 800px;
+}*/
+
+
+@media (min-width:768px) {
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background: #F7F7F7;
+        border-radius: 25px;
+        max-width: 1240px;
+        margin: 2rem auto;
+        height: 800px;
+        padding: 3rem;
+        row-gap: 3rem;
+    }
+}
+
+@media (max-width:767px){
+    .gallery{
+        background:white;
+    }
+}
