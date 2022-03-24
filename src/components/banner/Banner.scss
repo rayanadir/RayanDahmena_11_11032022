@@ -35,10 +35,10 @@
     
     @media (max-width:319px){
         &__image{
-            max-width: 200px;
             height: 124px;
             border-radius: 10px;
-            margin: auto;
+            margin: 2rem auto;
+            width: 90%;
         }
         &__text{
             position: absolute;
