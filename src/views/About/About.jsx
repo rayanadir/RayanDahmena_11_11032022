@@ -10,12 +10,10 @@ import Banner from '../../components/banner/Banner';
 const About = () => {
     
     return (
-        <div>
-            <Header />
+        <main>
             <Banner image={background} type="about" />
             <AboutDropdowns />
-            <Footer />
-        </div>
+        </main>
     )
 }
 
