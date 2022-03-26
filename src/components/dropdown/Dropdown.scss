@@ -49,9 +49,9 @@
     }
 }
 
-.equipements_description{
+/*.equipements_description{
     width: 582px;
-}
+}*/
 
 .about{
     width: 1023px;
@@ -83,15 +83,12 @@
         width:auto;
         margin: auto;
     }
-    .dropdown_wrap{
-        width: 90%;
-    }
 }
 
 @media (max-width: 768px){
     .dropdown{
-        max-width: 582px;
-        min-width: 100px;
+        //max-width: 582px;
+        //min-width: 100px;
         width: auto;
     }
     .about{
@@ -100,8 +97,13 @@
         width: auto;
         margin: auto;
     }
-    .dropdown_wrap{
+    /*.dropdown_wrap{
         margin: 1rem;
-        //width: 90%;
+    }*/
+}
+
+@media (min-width:1201px){
+    .dropdown_wrap{
+        width: 582px;
     }
 }
