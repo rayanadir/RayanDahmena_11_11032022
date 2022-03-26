@@ -3,6 +3,7 @@
     align-items: center;
     position: relative;
     margin: auto;
+    max-width: 1240px;
     &__image{
         width: 1240px;
         height: 415px;
@@ -50,7 +51,7 @@
     .carrousel{
         &__image{
             max-width:1240px;
-            min-width: 768px;
+            min-width: 728px;
             max-height: 415px;
             min-height: 255px;
         }
@@ -82,10 +83,8 @@
         max-width:727px;
         min-width: 280px;
         &__image{
-            max-width:727px;
-            min-width: 280px;
+            width: 100%;
             height: auto;
-            margin: 20px;
         } 
     }
     .chevron{
@@ -105,9 +104,8 @@
     .carrousel{
         max-width:319px;
         &__image{
-            max-width:319px;
+            width: 100%;
             height: auto;
-            margin: 20px;
         }
     }
     .chevron{
