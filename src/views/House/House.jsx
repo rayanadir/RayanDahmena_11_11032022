@@ -8,7 +8,7 @@ import Dropdown from '../../components/dropdown/Dropdown';
 const House= (props) => {
     return(
         <main>
-            <Carrousel image={props.data.pictures[0]} key={props.data.pictures[0]} />
+            <Carrousel  image={props.data.pictures[0]} key={props.data.pictures[0]} pictures={props.data.pictures} />
             <section className='infos'>
                 <div className="infos__title_localisation_tags">
                     <div className="infos__title_localisation">
