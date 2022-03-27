@@ -1,8 +1,9 @@
 .tag{
     border-radius: 10px;
     background-color: #FF6060;
-    width: 115px;
+    width: auto;
     height: 25px;
+    padding: .2rem 1rem;
     &__name{
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
