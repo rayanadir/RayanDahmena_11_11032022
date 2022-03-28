@@ -55,6 +55,7 @@
 
 .about{
     width: 1023px;
+    margin: auto;
 }
 
 .closed{
@@ -102,8 +103,13 @@
     }*/
 }
 
+/*
 @media (min-width:1201px){
     .dropdown_wrap{
         width: 582px;
     }
+}*/
+
+.dropdown_wrap{
+    width: 100%;
 }

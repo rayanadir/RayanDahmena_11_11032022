@@ -45,7 +45,7 @@ const Dropdown = (props) => {
 Dropdown.propTypes={
     type:PropTypes.string,
     name:PropTypes.string,
-    content:PropTypes.string || PropTypes.array,
+    content:PropTypes.oneOfType([PropTypes.string,PropTypes.arrayOf(PropTypes.string)]),
 }
 
 export default Dropdown
