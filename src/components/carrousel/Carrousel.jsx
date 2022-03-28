@@ -9,10 +9,10 @@ const Carrousel = (props) => {
     const pictures=props.pictures;
 
         const previous=()=>{
-            setActiveIndex((a) => (a - 1 < 0 ? pictures.length - 1 : a - 1))
+            setActiveIndex((index) => (index - 1 < 0 ? pictures.length - 1 : index - 1))
         }
         const next=()=>{
-            setActiveIndex((a) => (a + 1 > pictures.length - 1 ? 0 : a + 1));
+            setActiveIndex((index) => (index + 1 > pictures.length - 1 ? 0 : index + 1));
         }
 
         return(
