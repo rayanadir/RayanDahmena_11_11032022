@@ -21,6 +21,10 @@
         color:#FF6060;
         list-style-type: none;
         cursor: pointer;
+        text-decoration: none;
+    }
+    &__element:active{
+        text-decoration: underline #FF6060;
     }
 }
 
@@ -38,6 +42,9 @@
             text-transform: uppercase;
             font-size: 12px;
         }
+    }
+    .house{
+        text-decoration: underline #FF6060;
     }
 }
 
@@ -62,4 +69,12 @@
         margin-bottom: 2rem;
         width: 94%;
     }
+    .house{
+        text-decoration: none;
+    }
 }
+
+.underline{
+    text-decoration: underline #FF6060;
+}
+
