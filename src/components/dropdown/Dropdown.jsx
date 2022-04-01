@@ -4,6 +4,11 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import React, { useState } from 'react'
 import PropTypes from 'prop-types';
 
+/**
+ * 
+ * @param {*} props charge un dropdown  
+ * @returns dropdown
+ */
 const Dropdown = (props) => {
     const [isOpen, toggle]=useState(false)
     
