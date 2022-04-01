@@ -3,6 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 
+/**
+ * 
+ * @param {*} props création composant Rating 
+ * @returns retourne la note en forme d'étoiles
+ */
 const Rating = (props) => {
     const rate=parseInt(props.rate);
     const difference=5-rate;
