@@ -1,6 +1,11 @@
 import '../thumb/Thumb.scss'
 import PropTypes from 'prop-types';
 
+/**
+ * 
+ * @param {*} props création composant Thumb
+ * @returns retourne une miniature
+ */
 const Thumb = (props) =>{
     return (
         <div className="thumb">
