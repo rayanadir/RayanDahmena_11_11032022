@@ -1,6 +1,10 @@
 import '../error/Error.scss'
 import { Link } from 'react-router-dom';
 
+/**
+ * 
+ * @returns message d'erreur
+ */
 const Error = () => {
     return(
         <section className='error'>
