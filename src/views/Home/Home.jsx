@@ -5,6 +5,11 @@ import background from '../../assets/background_home.png';
 import Gallery from '../../components/gallery/Gallery';
 import PropTypes from 'prop-types';
 
+/**
+ * 
+ * @param {*} props création composant Home 
+ * @returns retourne la page d'accueil avec les données passées en paramètres
+ */
 const Home = (props) => {
     return(
         <main>
