@@ -1,38 +1,30 @@
 import './components/tag/Tag'
-import Tag from './components/tag/Tag';
-import Thumb from './components/thumb/Thumb';
-import Dropdown from './components/dropdown/Dropdown';
-import Carrousel from './components/carrousel/Carrousel';
 import { data } from './data/logements';
-import { about } from './data/aboutData';
 import Footer from './components/footer/Footer';
 import Home from './views/Home/Home';
 import About from './views/About/About';
-
+import Error404 from './views/Error404/Error404';
+import React from 'react';
+import Header from './components/header/Header';
+import House from './views/House/House';
+import { Routes , Route } from "react-router-dom";
 
 const App = ()=> {
-    //console.log(data);
   return(
-      <div>
-        
-        
-        <About />
-        
-        
-        
-        {/*
-        <Home />
-        <Dropdown name={about[1].name} content={about[1].content} type="about" />
-        <Tag name={data[0].tags[0]}/>
-        <Dropdown content={data[0].equipments} name="Equipements" type="equipements_description"/>
-          <Thumb name={data[0].title} cover={data[0].cover} />
-          <Carrousel image={data[0].cover} />
+        <React.StrictMode>
+          {/*Composant Header*/}
+          <Header />
+          {/*Définition des routes */}
+          <Routes>
+              <Route exact path='/' element={<Home data={data} />} />
+              <Route exact path='/house/:id' element={<House />} />
+              <Route exact path='/about' element={<About />} />
+              <Route path='*' element={<Error404 />} />
+          </Routes>
+          {/*Composant Footer */}
           <Footer />
-        */}
-        
-      </div>
-    )
-    
-  }
+        </React.StrictMode> 
+  )
+}
 
 export default App;
