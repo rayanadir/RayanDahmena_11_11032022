@@ -17,9 +17,12 @@
         background: #F7F7F7;
         border-radius: 25px;
         max-width: 1240px;
-        margin: 1.5rem;
+        margin: 1.5rem auto;
         padding: 3rem 0;
         row-gap: 3rem;
+    }
+    .link{
+        width: 90%;
     }
 }
 
@@ -31,9 +34,11 @@
         row-gap: 1rem;
         margin-bottom: 2rem;
     }
+    .link{
+        width: 100%;
+    }
 }
 
-a{
-    display: flex;
-    justify-content: center;
+.link{
+    place-self: center;
 }
