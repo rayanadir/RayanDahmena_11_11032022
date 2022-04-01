@@ -1,6 +1,10 @@
 import './Footer.scss';
 import logo from '../../assets/logo_footer.png'
 
+/**
+ * 
+ * @returns composant Footer
+ */
 const Footer = () => {
     const year= new Date().getFullYear();
     return(
