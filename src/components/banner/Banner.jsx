@@ -1,6 +1,11 @@
 import '../banner/Banner.scss';
 import PropTypes from 'prop-types';
 
+/**
+ * 
+ * @param {*} props charge la bannière
+ * @returns bannière
+ */
 const Banner = (props) => {
     if(props.type==="about"){
         return (
