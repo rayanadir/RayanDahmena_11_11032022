@@ -10,11 +10,11 @@ import setUnderline from '../../app/active_element';
 const Header = () => {
     return(
             <header className='header'>
-                <Link to='/RayanDahmena_11_11032022/' onClick={() => {setUnderline('home')}}>
+                <Link to='/RayanDahmena_11_11032022' onClick={() => {setUnderline('home')}}>
                     <img src={logo} className='header__logo' alt='header' />
                 </Link>
                 <nav className="header__nav">
-                    <Link to='/RayanDahmena_11_11032022/' className='header__element underline' id='home' onClick={() => {setUnderline('home')}}>Accueil</Link>
+                    <Link to='/RayanDahmena_11_11032022' className='header__element underline' id='home' onClick={() => {setUnderline('home')}}>Accueil</Link>
                     <Link to='/about' className='header__element' id='about' onClick={()=>{setUnderline('about')}}>A propos</Link>
                 </nav>
             </header>
