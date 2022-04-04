@@ -16,7 +16,7 @@ const App = ()=> {
           <Header />
           {/*Définition des routes */}
           <Routes>
-              <Route exact path='/RayanDahmena_11_11032022' element={<Home data={data} />} />
+              <Route exact path='/RayanDahmena_11_11032022/' element={<Home data={data} />} />
               <Route exact path='/house/:id' element={<House />} />
               <Route exact path='/about' element={<About />} />
               <Route path='*' element={<Error404 />} />
