@@ -9,6 +9,7 @@ import Banner from '../../components/banner/Banner';
  * @returns page About
  */
 const About = () => {
+    document.title="À propos"
     return (
         <main>
             <Banner image={background} type="about" />

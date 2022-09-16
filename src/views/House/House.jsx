@@ -16,6 +16,7 @@ const House= () => {
     window.scrollTo(0,0)
     let {id} = useParams();
     const house=data.find(house=>house.id===id)
+    document.title=house.title
     if(!house){
         return <Error404 />
     }

@@ -11,6 +11,7 @@ import PropTypes from 'prop-types';
  * @returns retourne la page d'accueil avec les données passées en paramètres
  */
 const Home = (props) => {
+    document.title="Kasa";
     return(
         <main>
             <Banner image={background} type="home" />
